@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="border">
+        <h1>GAME</h1>
+        <h1>ROCK, PAPER, SCISSORS</h1>
+        <div class="select">
+
+            <h3>Select your hand</h3>
+
+            <img data-option="paper" class="first" src="papier.jpg" alt="" title="paper">
+
+            <img data-option="rock" src="kamien.jpg" alt="" title="rock">
+
+            <img data-option="scissors" src="nozyczki.jpg" alt="" title="scissors">
+
+        </div>
+
+        <button class="start">Let's play!</button>
+
+        <div class="panel-left">
+            <h3>Game result</h3>
+            <p>Your choice: <span data-summary="your-choice"></span></p>
+            <p>AI choice: <span data-summary="ai-choice"></span></p>
+            <h2>Result: <span data-summary="who-win"></span></h2>
+        </div>
+
+        <div class="panel-right">
+            <h3>Live results</h3>
+            <p class="numbers">matches played: <span>0</span></p>
+            <p class="wins">won: <span>0</span></p>
+            <p class="losses">lost: <span>0</span></p>
+            <p class="draws">draw: <span>0</span></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
